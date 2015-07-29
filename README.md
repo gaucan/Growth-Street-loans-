@@ -1,5 +1,6 @@
 # Growth Street loans
-Growth Street app for loans
+
+This is a Flask app that helps to register and request a loan.
 
 Install with virtualenvenvwrapper: 
 `mkvirtualenv growth-street`
