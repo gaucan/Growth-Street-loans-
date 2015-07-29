@@ -2,7 +2,7 @@
 Growth Street app for loans
 
 Install with virtualenvenvwrapper: 
-`mkvirtualenv growth-Street`
+`mkvirtualenv growth-street`
 
 Install requirements:
 `pip install -r requirements.txt`
