@@ -1,2 +1,2 @@
-# Growth-Street-loans-
+# Growth Street loans
 Growth Street app for loans
