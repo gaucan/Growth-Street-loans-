@@ -1,0 +1,21 @@
+{% from "_formhelpers.html" import render_field %}
+
+
+{% extends "base.html" %}
+{% block content %}
+
+<h1>
+	Loan some money! :-) 
+</h1>
+
+<form method=post>
+  {{ form.hidden_tag() }}
+  <dl>
+    {{ render_field(form.amount) }}
+    {{ render_field(form.days) }}
+    {{ render_field(form.reason) }}
+  </dl>
+  <p><input type=submit value=Loan>
+</form>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% from "_formhelpers.html" import render_field %}
+
+
+{% extends "base.html" %}
+{% block content %}
+
+
+<h1> All registered loans: </h1>
+
+<div class="loans">
+  {% for loan in loans %}
+    <div>
+      <p>
+        Borrower's name: {{ loan.borrower.name }} <br>
+        Email: {{loan.borrower.email}} <br>
+        Bussiness name: {{loan.borrower.buss_name}} <br>
+        Address: {{loan.borrower.address}} <br>
+        Registered company number : {{loan.borrower.company_number}} <br>
+        Bussiness sector: {{loan.borrower.buss_sector}} <br>
+        Name: {{loan.borrower.name}} <br>
+        Phone: {{loan.borrower.phone}} <br>
+        Amount: <b>{{ loan.amount }}</b> <br>
+        Reason: <b>{{ loan.reason }}</b> <br>
+        Days: <b>{{ loan.days }}</b> <br>
+      </p>
+      <hr>
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

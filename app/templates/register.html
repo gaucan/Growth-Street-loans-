@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+
+
+
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+  {{ form.hidden_tag() }}
+  <dl>
+    {{ render_field(form.buss_name) }}
+    {{ render_field(form.email) }}
+    {{ render_field(form.address) }}
+    {{ render_field(form.company_number) }}
+    {{ render_field(form.buss_sector) }}
+    {{ render_field(form.name) }}
+    {{ render_field(form.phone) }}
+  </dl>
+  <p><input type=submit value=Register>
+</form>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Hi, {{ user.name }}!</h1>
+     
+     Your info:
+     <p>
+       Email: {{user.email}} <br>
+       Bussiness name: {{user.buss_name}} <br>
+       Address: {{user.address}} <br>
+       Registered company number : {{user.company_number}} <br>
+       Bussiness sector: {{user.buss_sector}} <br>
+       Name: {{user.name}} <br>
+       Phone: {{user.phone}} <br>
+     </p>
+
+    <h2>Here is list of all your loans!</h2>
+    <hr>
+    <div class="loans">
+  {% for loan in loans %}
+    <div>
+      <p>
+        Amount: <b>£{{ loan.amount }}</b> <br>
+        Reason: <b>{{ loan.reason }}</b> <br>
+        Days: <b>{{ loan.days }}</b> <br>
+      </p>
+      <hr>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
+
